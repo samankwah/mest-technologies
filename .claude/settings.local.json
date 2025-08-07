@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm update:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm run build:*)",
+      "Bash(timeout 10 npm run dev)",
+      "Bash(mkdir:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(timeout 15 npm run start)",
+      "Bash(npm install:*)",
+      "Bash(timeout 10 npm run dev:mock)",
+      "Bash(curl:*)",
+      "Bash(find:*)",
+      "Bash(timeout 8 npm run dev:mock)",
+      "Bash(timeout 8 npm run dev)",
+      "Bash(grep:*)",
+      "Bash(rm:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(npm ls:*)",
+      "Bash(./node_modules/.bin/vite:*)",
+      "Bash(PATH=\"/usr/bin:/bin\" npm list -g --depth=0)",
+      "Bash(yarn install)",
+      "Bash(timeout 15 npm run dev)",
+      "Bash(chmod:*)",
+      "Bash(npm --version)",
+      "Bash(sudo rm:*)",
+      "Bash(npx create-vite:*)",
+      "Bash(npx:*)",
+      "Bash(timeout 30 npm run build)"
+    ],
+    "deny": []
+  }
+}
