@@ -12,7 +12,7 @@ const Basket = () => {
           <div className="w-full md:w-1/2 text-center md:text-left z-10 pb-4">
             <div className="space-y-4">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold uppercase tracking-wide leading-tight text-black">
-                STYLISH MINIMAL CHAIR
+                PLANT DISEASE DETECTION
               </h2>
               <div className="pt-2">
                 <button className="font-medium uppercase tracking-widest py-1 border-b-2 border-black hover:opacity-70 transition-opacity text-sm">
@@ -26,7 +26,7 @@ const Basket = () => {
           <div className="absolute top-0 right-8 transform -translate-y-16 lg:-translate-y-20">
             <img
               src={BasketImage}
-              alt="Stylish woven minimal chair"
+              alt="IPM Plant Disease Detection System"
               className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 object-contain"
             />
           </div>

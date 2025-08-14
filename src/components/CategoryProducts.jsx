@@ -12,7 +12,7 @@ const CategoryProducts = ({ products, category_name }) => {
               {category_name}
             </h3>
             <p className="text-sm font-light tracking-wider text-gray-600  ">
-              Small be and the rain would phase distance, succeed align.
+              Professional agricultural monitoring equipment designed for Ghana's climate and farming conditions.
             </p>
             <View_button title="shop now" />
           </div>

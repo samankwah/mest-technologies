@@ -145,7 +145,7 @@ async function runInteractive() {
         output: process.stdout
     });
     
-    console.log('🚀 Shoptik Progress Tracker Update Tool\n');
+    console.log('🚀 Mest Technologies Progress Tracker Update Tool\n');
     
     rl.question('What would you like to update?\n1. Project meta\n2. Phase progress\n3. Component status\n4. Add changelog entry\n5. Calculate progress\nChoice (1-5): ', (choice) => {
         const progress = loadProgress();

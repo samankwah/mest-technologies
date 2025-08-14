@@ -1,14 +1,14 @@
-# Shoptik E-Commerce Project Plan & Progress Tracker
+# Mest Technologies Agricultural Equipment Platform - Project Plan & Progress Tracker
 
 ## Project Overview
 
-**Project Name:** Shoptik - Ghana Furniture E-Commerce Website  
+**Project Name:** Mest Technologies - Ghana Agricultural Equipment Platform  
 **Version:** 2.0.0 (Ghana Localized)  
 **Last Updated:** 2025-08-06  
 **Status:** Active Development  
 
 ### Project Description
-A full-stack e-commerce platform for furniture sales, localized for the Ghana market. Built with React, Stripe payments, Auth0 authentication, and Netlify serverless functions.
+A full-stack e-commerce platform for agricultural equipment and monitoring systems, localized for the Ghana market. Built with React, Paystack payments, Auth0 authentication, and Netlify serverless functions.
 
 ### Tech Stack
 - **Frontend:** React 18.3.1, TailwindCSS 3.4.17, React Router 6.30.1
@@ -48,9 +48,9 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 
 3. **Location Context Updates**
    - Updated contact phone: (+233) 24 123 4567
-   - Updated email: shoptik.ghana@gmail.com
+   - Updated email: info@mest-technologies.com
    - Updated address: Ring Road East, Accra, Ghana
-   - Updated branding: "Ghana's #1 Trusted furniture website"
+   - Updated branding: "Ghana's #1 Trusted agricultural equipment platform"
    - Updated shipping address for Stripe payments
 
 4. **Testing & Validation**
@@ -95,7 +95,7 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 1. **Product Database Review**
    - [ ] Audit current product listings
    - [ ] Update product prices to GHS
-   - [ ] Add local furniture categories
+   - [ ] Add agricultural equipment categories
    - [ ] Implement product search optimization
 
 2. **Content Management**
@@ -126,7 +126,7 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 - [ ] Local SEO optimization
 - [ ] Social media integration
 - [ ] Customer acquisition campaigns
-- [ ] Partnership with local furniture stores
+- [ ] Partnership with local agricultural equipment suppliers
 
 ---
 
@@ -210,7 +210,7 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 ### Medium Risk
 - **Currency Fluctuations:** GHS exchange rate impacts
 - **Local Competition:** Market positioning challenges
-- **Supply Chain:** Furniture supplier reliability
+- **Supply Chain:** Agricultural equipment supplier reliability
 
 ### Low Risk
 - **Technical Implementation:** Well-established tech stack
@@ -239,7 +239,7 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 
 ### Development
 - **Repository:** [Local Development]
-- **Live Site:** https://shoptik.netlify.app (Original)
+- **Live Site:** https://mest-technologies.netlify.app (Original)
 - **Staging:** [To be configured]
 - **Documentation:** This document
 
@@ -256,7 +256,7 @@ A full-stack e-commerce platform for furniture sales, localized for the Ghana ma
 ### Immediate (Next 1-2 weeks)
 1. **Complete Phase 2 Planning**
    - Define product categories for Ghana market
-   - Research local furniture suppliers
+   - Research local agricultural equipment suppliers
    - Plan content localization strategy
 
 2. **Technical Improvements**

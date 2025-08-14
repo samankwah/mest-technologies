@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Simple Status Checker for Shoptik Project
+ * Simple Status Checker for Mest Technologies Project
  * Usage: node scripts/check_status.js
  */
 
@@ -27,7 +27,7 @@ function loadProgress() {
 function showStatus() {
     const progress = loadProgress();
     
-    console.log('📊 Shoptik Project Status Report\n');
+    console.log('📊 Mest Technologies Project Status Report\n');
     console.log(`Project: ${progress.project.name}`);
     console.log(`Version: ${progress.project.version}`);
     console.log(`Overall Progress: ${progress.project.overallProgress}%`);

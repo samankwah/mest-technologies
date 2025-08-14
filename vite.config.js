@@ -8,11 +8,11 @@ export default defineConfig({
     react(),
     VitePWA({
       manifest: {
-        name: "Shoptik",
-        short_name: "Shoptik",
+        name: "Mest Technologies",
+        short_name: "Mest Tech",
         description:
-          "Find beautifully crafted furniture for your home at Shoptik.",
-        categories: ["shopping"],
+          "Advanced agricultural monitoring equipment and laboratory instruments for Ghana's farming sector.",
+        categories: ["business", "productivity", "agriculture"],
         icons: [
           {
             src: "/android-chrome-192x192.png",
@@ -43,21 +43,21 @@ export default defineConfig({
             sizes: "800x600",
             platform: "android",
             label:
-              "Find beautifully crafted furniture for your home at Shoptik.",
+              "Advanced agricultural monitoring equipment and laboratory instruments for Ghana's farming sector.",
           },
           {
             src: "https://res.cloudinary.com/die12ywpb/image/upload/v1687669422/screenshot2_se3fi3.png",
             sizes: "1200x800",
             platform: "android",
             label:
-              "Find beautifully crafted furniture for your home at Shoptik.",
+              "Advanced agricultural monitoring equipment and laboratory instruments for Ghana's farming sector.",
           },
           {
             src: "https://res.cloudinary.com/die12ywpb/image/upload/v1687669423/screenshot3_crmnwv.png",
             sizes: "800x600",
             platform: "android",
             label:
-              "Find beautifully crafted furniture for your home at Shoptik.",
+              "Advanced agricultural monitoring equipment and laboratory instruments for Ghana's farming sector.",
           },
         ],
         theme_color: "#171717",

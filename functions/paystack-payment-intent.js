@@ -25,13 +25,13 @@ exports.handler = async (event, context) => {
       email: email,
       amount: calculateOrderAmount(), // Amount in kobo/pesewas
       currency: "GHS", // Ghana Cedis
-      reference: `shoptik_${Date.now()}`,
+      reference: `mest_tech_${Date.now()}`,
       callback_url: `${event.headers.origin}/completion`,
       metadata: {
         customer_name: customer_name,
         shipping_fee: shipping_fee,
         total_amount: total_amount,
-        order_source: "Shoptik Ghana"
+        order_source: "Mest Technologies"
       },
       channels: ["card", "bank", "ussd", "qr", "mobile_money"]
     }

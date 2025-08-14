@@ -6,7 +6,7 @@ export const navLinks = [
   },
   {
     id: 2,
-    title: "shop",
+    title: "equipment",
     url: "/shop",
   },
   {
@@ -21,7 +21,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    title: "news",
+    title: "resources",
     url: "/news",
   },
 ]

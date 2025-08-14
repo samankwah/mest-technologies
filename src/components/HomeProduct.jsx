@@ -3,75 +3,75 @@ import { Link } from "react-router-dom"
 const HomeProduct = () => {
   const [activeCategory, setActiveCategory] = useState("ALL")
 
-  // Hardcoded product data from the screenshot
+  // Agricultural equipment products for Ghana market
   const hardcodedProducts = [
     {
       id: "rec123",
-      name: "Modern Sofa - Ghana Edition",
-      price: "₵1,500.00",
-      category: "SOFA",
+      name: "IPM Plant Disease Detection System",
+      price: "₵8,500.00",
+      category: "PLANT HEALTH",
       badge: null,
       image: "/src/assets/basketChair.webp"
     },
     {
       id: "rec124",
-      name: "Dining Table - Ashanti Style",
-      price: "₵1,200.00",
-      category: "FURNITURE",
+      name: "Watchdog Wind Station - Weather Monitor",
+      price: "₵12,500.00",
+      category: "WEATHER MONITORING",
       badge: "NEW",
       image: "/src/assets/light1.webp"
     },
     {
       id: "rec125",
-      name: "Traditional Chair - Kente Pattern",
-      price: "₵800.00",
-      category: "LOUNGE CHAIRS",
+      name: "SoilMaster Pro pH Analysis Kit",
+      price: "₵1,800.00",
+      category: "SOIL & WATER",
       badge: "SALE",
       image: "/src/assets/light2.webp"
     },
     {
       id: "rec126",
-      name: "Wooden Janus Table Lamp",
-      price: "₵1,100.00",
-      category: "LIGHTING",
+      name: "AquaSense Water Quality Monitor",
+      price: "₵3,200.00",
+      category: "SOIL & WATER",
       badge: "NEW",
       image: "/api/placeholder/300/300"
     },
     {
       id: "rec127",
-      name: "Table Lamp For Desk",
-      price: "₵270.00",
-      category: "LIGHTING",
+      name: "NutriTrack NPK Fertilizer Analyzer",
+      price: "₵950.00",
+      category: "NUTRIENT MANAGEMENT",
       badge: null,
       image: "/api/placeholder/300/300"
     },
     {
       id: "rec128",
-      name: "Under Dressing Table Kit",
-      price: "₵720.00",
-      category: "FURNITURE",
+      name: "LabPro Precision Analytical Scale",
+      price: "₵2,400.00",
+      category: "LAB EQUIPMENT",
       badge: "SALE",
       image: "/api/placeholder/300/300"
     },
     {
       id: "rec129",
-      name: "Stage Floor Lamp",
-      price: "₵330.00",
-      category: "LIGHTING",
+      name: "PlantVision AI Health Scanner",
+      price: "₵6,800.00",
+      category: "PLANT HEALTH",
       badge: "SALE",
       image: "/api/placeholder/300/300"
     },
     {
       id: "rec130",
-      name: "Single Speaker Ring",
-      price: "₵200.00",
-      category: "DECORATION",
+      name: "Multi-Parameter Test Strip Kit",
+      price: "₵150.00",
+      category: "CONSUMABLES",
       badge: null,
       image: "/api/placeholder/300/300"
     }
   ]
 
-  const categories = ["ALL", "SOFAS", "ARCHITECT", "FURNITURE", "DECORATION", "LIGHTING", "LOUNGE CHAIRS"]
+  const categories = ["ALL", "WEATHER MONITORING", "SOIL & WATER", "PLANT HEALTH", "NUTRIENT MANAGEMENT", "LAB EQUIPMENT", "CONSUMABLES"]
 
   const filteredProducts = activeCategory === "ALL" 
     ? hardcodedProducts 

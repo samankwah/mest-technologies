@@ -1,46 +1,49 @@
-import React from "react"
-import Blog_01 from "../assets/Blog1.webp"
-import Blog_02 from "../assets/Blog2.webp"
-import Blog_03 from "../assets/Blog3.webp"
-import { BsTelephone, BsBuilding } from "react-icons/bs"
+import React from "react";
+import Blog_01 from "../assets/Blog1.webp";
+import Blog_02 from "../assets/Blog2.webp";
+import Blog_03 from "../assets/Blog3.webp";
+import { BsTelephone, BsBuilding } from "react-icons/bs";
 import {
   AiOutlineFacebook,
   AiFillTwitterSquare,
   AiOutlineLinkedin,
   AiOutlineInstagram,
-} from "react-icons/ai"
-import { FiMail } from "react-icons/fi"
+} from "react-icons/ai";
+import { FiMail } from "react-icons/fi";
 
 const blog_data = [
   {
     id: 1,
-    title: "Furniture Decoration idea",
-    date: "October 20, 2022",
+    title: "Precision Agriculture with Smart Sensors",
+    date: "October 20, 2024",
     image: Blog_01,
   },
   {
     id: 2,
-    title: "Decorate your idea in house",
-    date: "November 03, 2022",
+    title: "Weather Monitoring for Better Crop Yields",
+    date: "November 03, 2024",
     image: Blog_02,
   },
   {
     id: 3,
-    title: "Dining Table decorate",
-    date: "December 15, 2022",
+    title: "Soil Health Management Techniques",
+    date: "December 15, 2024",
     image: Blog_03,
   },
-]
+];
 
 const Footer = () => {
   return (
     <>
       <footer className="container mx-auto mt-28 grid grid-cols-1 space-y-10 bg-primary px-5 py-8 tracking-wider text-white md:mt-28 md:grid-cols-4 md:space-y-0 xl:px-28 xl:py-20 ">
-        {/* Shoptik */}
+        {/* Mest Technologies */}
         <section className="space-y-4">
-          <h1 className="text-4xl font-black tracking-wider">Shoptik.</h1>
+          <h1 className="text-4xl font-black tracking-wider">
+            Mest Technologies
+          </h1>
           <p className="w-2/3 text-sm font-light">
-            Explore the various kind of products for your Home, office and Room.
+            Advanced agricultural monitoring equipment for weather, soil, water,
+            plant health, and laboratory applications across Ghana.
           </p>
         </section>
 
@@ -63,14 +66,14 @@ const Footer = () => {
                 {" "}
                 <FiMail />{" "}
               </span>
-              <span> shoptik.ghana@gmail.com</span>
+              <span> info@mest-technologies.gh</span>
             </p>
             <p className="flex items-center space-x-1">
               <span>
                 {" "}
                 <BsBuilding />{" "}
               </span>
-              <span> Ring Road East, Accra, Ghana</span>
+              <span>East Legon, Accra, Ghana</span>
             </p>
             <div className="flex space-x-6">
               <a href="#" aria-label="Facebook">
@@ -97,7 +100,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-4 text-sm font-light">
             <a href="#" className="hover:text-white/80">
-              About Shoptik
+              About Mest Technologies Limited
             </a>
             <a href="#" className="hover:text-white/80">
               Contact us
@@ -125,7 +128,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-3 font-light ">
             {blog_data.map((item) => {
-              const { id, title, image, date } = item
+              const { id, title, image, date } = item;
               return (
                 <article
                   key={id}
@@ -145,13 +148,13 @@ const Footer = () => {
                     <p className="text-xs text-gray-200"> {date} </p>
                   </div>
                 </article>
-              )
+              );
             })}
           </div>
         </section>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

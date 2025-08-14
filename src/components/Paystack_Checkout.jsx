@@ -49,7 +49,7 @@ const Paystack_Checkout = () => {
       email: email,
       amount: totalInKobo, // Amount in kobo (pesewas)
       currency: "GHS",
-      ref: `shoptik_${Date.now()}`,
+      ref: `mest_tech_${Date.now()}`,
       metadata: {
         customer_name: `${firstName} ${lastName}`,
         phone: phone,

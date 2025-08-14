@@ -48,13 +48,13 @@ export const AuthProvider = ({ children }) => {
   }, [])
 
   const checkAuthStatus = () => {
-    const savedUser = localStorage.getItem("shoptik_user")
+    const savedUser = localStorage.getItem("mest_tech_user")
     if (savedUser) {
       try {
         const user = JSON.parse(savedUser)
         dispatch({ type: AUTH_ACTIONS.SET_USER, payload: user })
       } catch (error) {
-        localStorage.removeItem("shoptik_user")
+        localStorage.removeItem("mest_tech_user")
         dispatch({ type: AUTH_ACTIONS.SET_LOADING, payload: false })
       }
     } else {
@@ -74,7 +74,7 @@ export const AuthProvider = ({ children }) => {
         loginTime: new Date().toISOString()
       }
       
-      localStorage.setItem("shoptik_user", JSON.stringify(user))
+      localStorage.setItem("mest_tech_user", JSON.stringify(user))
       dispatch({ type: AUTH_ACTIONS.SET_USER, payload: user })
       return { success: true, user }
     } catch (error) {
@@ -92,7 +92,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   const logout = (options = {}) => {
-    localStorage.removeItem("shoptik_user")
+    localStorage.removeItem("mest_tech_user")
     dispatch({ type: AUTH_ACTIONS.LOGOUT })
     
     if (options.logoutParams?.returnTo) {

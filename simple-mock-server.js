@@ -10,151 +10,151 @@ import url from 'url';
 
 const PORT = 8888;
 
-// Mock product data
+// Mock agricultural equipment data
 const mockProducts = [
   {
     id: "rec123",
-    name: "Modern Sofa - Ghana Edition",
-    price: 1500, // Price in GHS (Ghana Cedis)
-    category: "sofa",
-    description: "A beautiful modern sofa perfect for Ghanaian homes",
+    name: "IPM Plant Disease Detection System",
+    price: 8500, // Price in GHS (Ghana Cedis)
+    category: "Plant Health",
+    description: "Advanced plant disease detection and identification system perfect for Ghanaian crop monitoring. Features high-resolution imaging, AI-powered disease recognition, and field-portable design.",
     image: "/src/assets/basketChair.webp",
     images: [{ url: "/src/assets/basketChair.webp" }],
-    colors: ["blue", "gray"],
-    company: "Ghana Furniture Co",
+    colors: ["black", "white", "gray", "green"],
+    company: "Mest AgriTech Solutions",
     featured: true,
     shipping: true,
     stock: 5,
     stars: 4.5,
     reviews: 23,
-    material: "fabric",
-    designer: "Kwame Asante"
+    material: "Weather-resistant ABS plastic",
+    designer: "Agricultural Engineering Team"
   },
   {
     id: "rec124", 
-    name: "Dining Table - Ashanti Style",
-    price: 1200, // Price in GHS
-    category: "dining",
-    description: "Elegant dining table inspired by Ashanti craftsmanship",
+    name: "Watchdog 2550 Wind Station - Professional Weather Monitoring",
+    price: 12500, // Price in GHS
+    category: "Weather Monitoring",
+    description: "Professional-grade weather station designed for Ghanaian agricultural conditions. Monitors wind speed, direction, temperature, humidity, and rainfall.",
     image: "/src/assets/light1.webp",
     images: [{ url: "/src/assets/light1.webp" }],
-    colors: ["brown", "oak"],
-    company: "Accra Woodworks",
+    colors: ["black", "white", "gray", "green"],
+    company: "Precision Agri Accra Ltd",
     featured: false,
     shipping: true,
     stock: 3,
     stars: 4.2,
     reviews: 15,
-    material: "wood",
-    designer: "Ama Osei"
+    material: "Anodized aluminum with UV-resistant coating",
+    designer: "Weather Systems Engineering"
   },
   {
     id: "rec125",
-    name: "Traditional Chair - Kente Pattern",
-    price: 800, // Price in GHS
-    category: "chair", 
-    description: "Beautiful chair with traditional Kente pattern design",
+    name: "SoilMaster Pro pH Kit - Advanced Soil Analysis",
+    price: 1800, // Price in GHS
+    category: "Soil & Water", 
+    description: "Comprehensive soil analysis system for precision agriculture in Ghana. Measures pH, nutrient levels, organic matter, and soil conductivity.",
     image: "/src/assets/light2.webp",
     images: [{ url: "/src/assets/light2.webp" }],
-    colors: ["red", "gold", "green"],
-    company: "Kumasi Crafts",
+    colors: ["black", "white", "gray", "green"],
+    company: "Kumasi Agricultural Instruments",
     featured: true,
     shipping: true,
     stock: 8,
     stars: 4.8,
     reviews: 32,
-    material: "wood",
-    designer: "Kofi Mensah"
+    material: "Ruggedized plastic with waterproof seals",
+    designer: "Soil Science Laboratory"
   },
   {
     id: "rec126",
-    name: "Wooden Janus Table Lamp",
-    price: 1100,
-    category: "lighting",
-    description: "Contemporary wooden table lamp with adjustable brightness. Features sustainable wood construction with modern LED technology.",
+    name: "AquaSense Water Monitor - Multi-Parameter Testing",
+    price: 3200,
+    category: "Soil & Water",
+    description: "Professional water quality monitoring system for irrigation and aquaculture applications. Measures pH, dissolved oxygen, turbidity, temperature, and conductivity.",
     image: "/api/placeholder/400/400",
     images: [{ url: "/api/placeholder/400/400" }],
-    colors: ["Natural Wood", "Dark Oak"],
-    company: "Accra Lighting Co",
+    colors: ["black", "white", "gray", "green"],
+    company: "Hydro Systems Ghana",
     featured: true,
     shipping: true,
     stock: 5,
     stars: 4.8,
     reviews: 18,
-    material: "Teak Wood",
-    designer: "Nana Akoto"
+    material: "Titanium sensors with ABS housing",
+    designer: "Water Quality Engineering"
   },
   {
     id: "rec127",
-    name: "Table Lamp For Desk",
-    price: 270,
-    category: "lighting",
-    description: "Modern wooden desk lamp with adjustable arm and LED bulb. Perfect for office or study use.",
+    name: "NutriTrack Fertilizer Analyzer - Rapid NPK Testing",
+    price: 950,
+    category: "Nutrient Management",
+    description: "Portable nutrient analyzer for real-time NPK testing in field conditions. Features rapid analysis, digital readout, and calibration for Ghanaian soil types.",
     image: "/api/placeholder/400/400",
     images: [{ url: "/api/placeholder/400/400" }],
-    colors: ["Natural Wood", "White Oak"],
-    company: "Kumasi Designs",
+    colors: ["black", "white", "gray", "green"],
+    company: "AgriNutrient Systems",
     featured: false,
     shipping: true,
     stock: 12,
     stars: 4.3,
     reviews: 9,
-    material: "Pine Wood",
-    designer: "Efua Asante"
+    material: "Impact-resistant polycarbonate",
+    designer: "Nutrient Analysis Lab"
   },
   {
     id: "rec128",
-    name: "Under Dressing Table Kit",
-    price: 720,
-    category: "furniture",
-    description: "Complete wooden dressing table set with mirror and storage compartments. Crafted from premium hardwood.",
+    name: "LabPro Precision Scale - High-Accuracy Weighing",
+    price: 2400,
+    category: "Lab Equipment",
+    description: "Professional analytical balance for laboratory applications and field research. Features 0.1mg precision, internal calibration, and environmental controls.",
     image: "/api/placeholder/400/400",
     images: [{ url: "/api/placeholder/400/400" }],
-    colors: ["Natural Wood", "Mahogany"],
-    company: "Ghana Woodworks",
+    colors: ["black", "white", "gray", "green"],
+    company: "Laboratory Equipment Ghana",
     featured: true,
     shipping: true,
     stock: 3,
     stars: 4.6,
     reviews: 31,
-    material: "Mahogany Wood",
-    designer: "Kwame Osei"
+    material: "Stainless steel with anti-vibration base",
+    designer: "Precision Instruments Division"
   },
   {
     id: "rec129",
-    name: "Stage Floor Lamp",
-    price: 330,
-    category: "lighting",
-    description: "Industrial-style wooden floor lamp with adjustable height. Perfect for living rooms and reading corners.",
+    name: "PlantVision Health Scanner - AI-Powered Crop Monitoring",
+    price: 6800,
+    category: "Plant Health",
+    description: "Advanced crop health monitoring system with AI-powered disease detection. Features multispectral imaging, GPS mapping, and automated reporting.",
     image: "/api/placeholder/400/400",
     images: [{ url: "/api/placeholder/400/400" }],
-    colors: ["Black Wood", "Natural Wood"],
-    company: "Accra Modern",
+    colors: ["black", "white", "gray", "green"],
+    company: "Smart Agriculture Ghana",
     featured: true,
     shipping: true,
     stock: 4,
     stars: 4.7,
     reviews: 22,
-    material: "Ash Wood",
-    designer: "Aba Mensah"
+    material: "Carbon fiber with protective housing",
+    designer: "AI Agriculture Research Team"
   },
   {
     id: "rec130",
-    name: "Single Speaker Ring",
-    price: 200,
-    category: "decoration",
-    description: "Wooden speaker enclosure with premium acoustic properties. Handcrafted design meets high-quality sound.",
+    name: "Test Strip Consumables Kit - Multi-Parameter Analysis",
+    price: 150,
+    category: "Consumables",
+    description: "Comprehensive test strip kit for soil and water analysis. Includes pH strips, nitrate tests, phosphorus indicators, and potassium measurement tools.",
     image: "/api/placeholder/400/400",
     images: [{ url: "/api/placeholder/400/400" }],
-    colors: ["Natural Wood", "Dark Walnut"],
-    company: "Tamale Audio",
+    colors: ["black", "white", "gray", "green"],
+    company: "Northern Ghana Lab Supplies",
     featured: false,
     shipping: true,
     stock: 6,
     stars: 4.1,
     reviews: 8,
-    material: "Walnut Wood",
-    designer: "Abdul Rahman"
+    material: "Chemical-resistant paper strips",
+    designer: "Laboratory Standards Division"
   }
 ];
 
@@ -242,7 +242,7 @@ const server = http.createServer((req, res) => {
           data: {
             authorization_url: `https://checkout.paystack.com/mock_${Date.now()}`,
             access_code: `mock_access_code_${Date.now()}`,
-            reference: `shoptik_mock_${Date.now()}`
+            reference: `mest_tech_mock_${Date.now()}`
           }
         }));
       } catch (error) {
@@ -256,7 +256,7 @@ const server = http.createServer((req, res) => {
   // For all other requests, return instructions
   res.writeHead(200, { 'Content-Type': 'text/html' });
   res.end(`
-    <h1>🟡 Shoptik Mock Server Running</h1>
+    <h1>🟡 Mest Technologies Mock Server Running</h1>
     <p><strong>This server provides mock Netlify functions for development.</strong></p>
     
     <h2>Available Endpoints:</h2>

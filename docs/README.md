@@ -1,6 +1,6 @@
 # Project Documentation System
 
-This documentation system provides comprehensive tracking and management tools for the Shoptik Ghana E-Commerce project.
+This documentation system provides comprehensive tracking and management tools for the Mest Technologies Agricultural Equipment Platform.
 
 ## 📁 Documentation Structure
 
