@@ -33,7 +33,9 @@ import NotFound from "./NotFound"
 import CartItems from "./CartItems"
 import Stars from "./Stars"
 import Sidebar_Filter from "./Sidebar_Filter"
+import FloatingButtons from "./FloatingButtons"
 export {
+  FloatingButtons,
   Sidebar_Filter,
   Stars,
   CartItems,

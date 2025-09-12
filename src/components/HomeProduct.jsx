@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
+import BasketChair from "../assets/basketChair.webp"
+import Light1 from "../assets/light1.webp"
+import Light2 from "../assets/light2.webp"
 const HomeProduct = () => {
   const [activeCategory, setActiveCategory] = useState("ALL")
 
@@ -11,7 +14,7 @@ const HomeProduct = () => {
       price: "₵8,500.00",
       category: "PLANT HEALTH",
       badge: null,
-      image: "/src/assets/basketChair.webp"
+      image: BasketChair
     },
     {
       id: "rec124",
@@ -19,7 +22,7 @@ const HomeProduct = () => {
       price: "₵12,500.00",
       category: "WEATHER MONITORING",
       badge: "NEW",
-      image: "/src/assets/light1.webp"
+      image: Light1
     },
     {
       id: "rec125",
@@ -27,7 +30,7 @@ const HomeProduct = () => {
       price: "₵1,800.00",
       category: "SOIL & WATER",
       badge: "SALE",
-      image: "/src/assets/light2.webp"
+      image: Light2
     },
     {
       id: "rec126",
@@ -35,7 +38,7 @@ const HomeProduct = () => {
       price: "₵3,200.00",
       category: "SOIL & WATER",
       badge: "NEW",
-      image: "/api/placeholder/300/300"
+      image: "https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
       id: "rec127",
@@ -43,7 +46,7 @@ const HomeProduct = () => {
       price: "₵950.00",
       category: "NUTRIENT MANAGEMENT",
       badge: null,
-      image: "/api/placeholder/300/300"
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
       id: "rec128",
@@ -51,7 +54,7 @@ const HomeProduct = () => {
       price: "₵2,400.00",
       category: "LAB EQUIPMENT",
       badge: "SALE",
-      image: "/api/placeholder/300/300"
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
       id: "rec129",
@@ -59,7 +62,7 @@ const HomeProduct = () => {
       price: "₵6,800.00",
       category: "PLANT HEALTH",
       badge: "SALE",
-      image: "/api/placeholder/300/300"
+      image: "https://images.unsplash.com/photo-1581093804475-577d72e38aa0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     },
     {
       id: "rec130",
@@ -67,7 +70,7 @@ const HomeProduct = () => {
       price: "₵150.00",
       category: "CONSUMABLES",
       badge: null,
-      image: "/api/placeholder/300/300"
+      image: "https://images.unsplash.com/photo-1582560469781-1965b9af903d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
     }
   ]
 
@@ -83,12 +86,12 @@ const HomeProduct = () => {
         <div className="container mx-auto px-5 xl:px-28">
           {/* Category Navigation Tabs */}
           <div className="mb-8 flex justify-center">
-            <div className="flex flex-wrap gap-6 md:gap-12 text-sm md:text-base">
+            <div className="flex gap-4 md:flex-wrap md:gap-6 text-sm md:text-base overflow-x-auto scrollbar-hide pb-2 max-w-full">
               {categories.map((category, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveCategory(category)}
-                  className={`font-medium uppercase tracking-wider transition-colors hover:text-teal-500 ${
+                  className={`font-medium uppercase tracking-wider transition-colors hover:text-teal-500 whitespace-nowrap px-2 py-1 flex-shrink-0 ${
                     activeCategory === category
                       ? "text-teal-500"
                       : "text-gray-700"

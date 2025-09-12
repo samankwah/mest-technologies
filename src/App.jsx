@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "./components"
+import { Navbar, Footer, FloatingButtons } from "./components"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import {
   Home,
@@ -50,6 +50,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
+      <FloatingButtons />
     </BrowserRouter>
   )
 }

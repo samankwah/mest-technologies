@@ -29,7 +29,8 @@
       "Bash(sudo rm:*)",
       "Bash(npx create-vite:*)",
       "Bash(npx:*)",
-      "Bash(timeout 30 npm run build)"
+      "Bash(timeout 30 npm run build)",
+      "Bash(npm run dev:*)"
     ],
     "deny": []
   }

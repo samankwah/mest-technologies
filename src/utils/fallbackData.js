@@ -1,4 +1,8 @@
 // Agricultural equipment data for Mest Technologies platform
+import BasketChair from "../assets/basketChair.webp"
+import Light1 from "../assets/light1.webp"
+import Light2 from "../assets/light2.webp"
+
 export const fallbackProducts = [
   {
     id: "rec123",
@@ -6,10 +10,10 @@ export const fallbackProducts = [
     price: 8500,
     category: "Plant Health",
     description: "Advanced plant disease detection and identification system perfect for Ghanaian crop monitoring. Features high-resolution imaging, AI-powered disease recognition, and field-portable design. Includes comprehensive disease database and mobile app connectivity.",
-    image: "/src/assets/basketChair.webp",
+    image: BasketChair,
     images: [
-      { url: "/src/assets/basketChair.webp" },
-      { url: "/src/assets/basketChair.webp" },
+      { url: BasketChair },
+      { url: BasketChair },
       { url: "/src/assets/basketChair.webp" }
     ],
     colors: ["black", "white", "gray", "green"],
@@ -32,9 +36,9 @@ export const fallbackProducts = [
     price: 12500,
     category: "Weather Monitoring",
     description: "Professional-grade weather station designed for Ghanaian agricultural conditions. Monitors wind speed, direction, temperature, humidity, and rainfall. Features cellular connectivity, solar power, and weatherproof housing rated IP67.",
-    image: "/src/assets/light1.webp",
+    image: Light1,
     images: [
-      { url: "/src/assets/light1.webp" },
+      { url: Light1 },
       { url: "/src/assets/light1.webp" }
     ],
     colors: ["black", "white", "gray", "green"],
@@ -57,9 +61,9 @@ export const fallbackProducts = [
     price: 1800,
     category: "Soil & Water",
     description: "Comprehensive soil analysis system for precision agriculture in Ghana. Measures pH, nutrient levels, organic matter, and soil conductivity. Features digital display, GPS logging, and smartphone connectivity for data management.",
-    image: "/src/assets/light2.webp",
+    image: Light2,
     images: [
-      { url: "/src/assets/light2.webp" },
+      { url: Light2 },
       { url: "/src/assets/light2.webp" }
     ],
     colors: ["black", "white", "gray", "green"],
@@ -82,11 +86,11 @@ export const fallbackProducts = [
     price: 3200,
     category: "Soil & Water",
     description: "Professional water quality monitoring system for irrigation and aquaculture applications. Measures pH, dissolved oxygen, turbidity, temperature, and conductivity. Features waterproof design, data logging, and smartphone connectivity.",
-    image: "/api/placeholder/400/400",
+    image: "https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
     images: [
-      { url: "/api/placeholder/400/400" },
-      { url: "/api/placeholder/400/400" },
-      { url: "/api/placeholder/400/400" }
+      { url: "https://images.unsplash.com/photo-1551836022-8b2858c9c69b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+      { url: "https://images.unsplash.com/photo-1558618996-fcd5c8cd8c93?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+      { url: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
     ],
     colors: ["black", "white", "gray", "green"],
     company: "Hydro Systems Ghana",
@@ -108,9 +112,9 @@ export const fallbackProducts = [
     price: 950,
     category: "Nutrient Management", 
     description: "Portable nutrient analyzer for real-time NPK testing in field conditions. Features rapid analysis, digital readout, and calibration for Ghanaian soil types. Perfect for precision fertilizer application and cost optimization.",
-    image: "/api/placeholder/400/400",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
     images: [
-      { url: "/api/placeholder/400/400" }
+      { url: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
     ],
     colors: ["black", "white", "gray", "green"],
     company: "AgriNutrient Systems",
@@ -132,10 +136,10 @@ export const fallbackProducts = [
     price: 2400,
     category: "Lab Equipment",
     description: "Professional analytical balance for laboratory applications and field research. Features 0.1mg precision, internal calibration, and environmental controls. Ideal for soil sample preparation and chemical analysis.",
-    image: "/api/placeholder/400/400",
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
     images: [
-      { url: "/api/placeholder/400/400" },
-      { url: "/api/placeholder/400/400" }
+      { url: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" },
+      { url: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" }
     ],
     colors: ["black", "white", "gray", "green"],
     company: "Laboratory Equipment Ghana",
