@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react"
 import { useCartContext } from "../context/cart/cart_context"
 import { useNavigate } from "react-router-dom"
 import { formatPrice } from "../utils/helper"
-import { useAuth } from "../context/auth/auth_context"
+import { useAuth0 } from "@auth0/auth0-react"
 
 const Paystack_Checkout = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext()
-  const { user } = useAuth()
+  const { user, isAuthenticated } = useAuth0()
   const navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [firstName, setFirstName] = useState("")
@@ -16,7 +16,7 @@ const Paystack_Checkout = () => {
 
   // Pre-fill user data if logged in
   useEffect(() => {
-    if (user) {
+    if (isAuthenticated && user) {
       setEmail(user.email || "")
       if (user.name) {
         const nameParts = user.name.split(" ")
@@ -24,7 +24,7 @@ const Paystack_Checkout = () => {
         setLastName(nameParts.slice(1).join(" ") || "")
       }
     }
-  }, [user])
+  }, [isAuthenticated, user])
 
   // Load Paystack script
   useEffect(() => {
@@ -110,7 +110,7 @@ const Paystack_Checkout = () => {
 
   return (
     <section className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-      {user && (
+      {isAuthenticated && user && (
         <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
           <div className="flex items-center space-x-3">
             <img 

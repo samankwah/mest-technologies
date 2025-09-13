@@ -7,7 +7,7 @@ const Header = () => {
     <header className="container relative mx-auto flex overflow-hidden bg-[#d2e9e3] px-5 py-14 lg:py-20 xl:h-[28rem] xl:px-28">
       <div className=" space-y-8 md:w-2/3 md:space-y-16 xl:w-1/2">
         <div className="space-y-4">
-          <h1 className="text-4xl font-light capitalize leading-[1.2] md:text-5xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light capitalize leading-tight">
             {" "}
             {/* <span className=" font-medium ">Mest Technologies</span>  */}
             <span className=" font-medium ">Mest </span> Solutions 4 Our

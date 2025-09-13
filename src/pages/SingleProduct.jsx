@@ -12,8 +12,10 @@ import {
   ProductImages,
   Breadcrumb,
   Stars,
+  SEO,
 } from "../components"
 import { formatPrice } from "../utils/helper"
+import { getProductMetadata } from "../utils/pageMetadata"
 
 const SingleProduct = () => {
   const {
@@ -57,8 +59,14 @@ const SingleProduct = () => {
   if (!productData) return <Error />
 
   const { name, description, images, price, reviews, stars, stock } = productData
+  const productMetadata = getProductMetadata(name, formatPrice(price), productData.category)
+
   return (
     <>
+      <SEO
+        title={productMetadata.title}
+        description={productMetadata.description}
+      />
       <Breadcrumb title={name} product />
       <div className="container mx-auto my-10 grid gap-16 px-5 md:grid-cols-2 xl:my-32 xl:px-28  ">
         {/* Left */}

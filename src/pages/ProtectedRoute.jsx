@@ -1,10 +1,11 @@
 import React from "react"
-import { Navigate } from "react-router-dom"
-import { useAuth } from "../context/auth/auth_context"
+import { Navigate, useLocation } from "react-router-dom"
+import { useAuth0 } from "@auth0/auth0-react"
 
 const ProtectedRoute = ({ children }) => {
-  const { user, isLoading } = useAuth()
-  
+  const { isAuthenticated, isLoading } = useAuth0()
+  const location = useLocation()
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
@@ -15,11 +16,14 @@ const ProtectedRoute = ({ children }) => {
       </div>
     )
   }
-  
-  if (!user) {
-    return <Navigate to="/cart" state={{ message: "Please login to continue with checkout" }} />
+
+  if (!isAuthenticated) {
+    return <Navigate
+      to={`/auth?returnTo=${encodeURIComponent(location.pathname)}`}
+      state={{ message: "Please login to continue with checkout" }}
+    />
   }
-  
+
   return children
 }
 

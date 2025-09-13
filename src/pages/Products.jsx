@@ -7,7 +7,9 @@ import {
   NotFound,
   Sidebar_Filter,
   Loading,
+  SEO,
 } from "../components"
+import { pageMetadata } from "../utils/pageMetadata"
 import { useFilterContext } from "../context/filter/filter_context"
 import { useProductsContext } from "../context/product/products_context"
 import ReactGA from "react-ga4"
@@ -25,6 +27,10 @@ const Products = () => {
   })
   return (
     <>
+      <SEO
+        title={pageMetadata.shop.title}
+        description={pageMetadata.shop.description}
+      />
       <Breadcrumb title="products" />
       <section className="container relative mx-auto my-10 flex gap-10 px-5 xl:px-28 ">
         <Filters />

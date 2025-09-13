@@ -1,6 +1,7 @@
 import React from "react";
-import { Breadcrumb } from "../components";
+import { Breadcrumb, SEO } from "../components";
 import { Link } from "react-router-dom";
+import { pageMetadata } from "../utils/pageMetadata";
 
 const Features = () => {
   const coreFeatures = [
@@ -45,7 +46,7 @@ const Features = () => {
     <section className="bg-gradient-to-br from-gray-50 to-white py-20">
       <div className="container mx-auto px-5 xl:px-28">
         <div className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl">
+          <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
             Agricultural Equipment Solutions
           </h1>
           <p className="mx-auto max-w-2xl text-xl text-gray-600">
@@ -129,12 +130,18 @@ const Features = () => {
   );
 
   return (
-    <main>
-      <Breadcrumb title="Features" />
-      <CoreFeatures />
-      <SimpleStats />
-      <SimpleCTA />
-    </main>
+    <>
+      <SEO
+        title={pageMetadata.features.title}
+        description={pageMetadata.features.description}
+      />
+      <main>
+        <Breadcrumb title="Features" />
+        <CoreFeatures />
+        <SimpleStats />
+        <SimpleCTA />
+      </main>
+    </>
   );
 };
 

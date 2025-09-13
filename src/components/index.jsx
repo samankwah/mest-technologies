@@ -27,21 +27,21 @@ import View_button from "./View_button"
 import Order_summary from "./Order_summary"
 import Empty_cart from "./Empty_cart"
 import Paystack_Checkout from "./Paystack_Checkout"
-import LoginModal from "./LoginModal"
 import Cart_Button from "./Cart_Button"
 import NotFound from "./NotFound"
 import CartItems from "./CartItems"
 import Stars from "./Stars"
 import Sidebar_Filter from "./Sidebar_Filter"
 import FloatingButtons from "./FloatingButtons"
+import SEO from "./SEO"
 export {
+  SEO,
   FloatingButtons,
   Sidebar_Filter,
   Stars,
   CartItems,
   NotFound,
   Cart_Button,
-  LoginModal,
   Paystack_Checkout,
   Empty_cart,
   Order_summary,

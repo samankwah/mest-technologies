@@ -1,3 +1,5 @@
+import Auth from "./Auth"
+import Callback from "./Callback"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
 import Completion from "./Completion"
@@ -11,6 +13,8 @@ import Services from "./Services"
 import SingleProduct from "./SingleProduct"
 
 export {
+  Auth,
+  Callback,
   Features,
   Services,
   News,

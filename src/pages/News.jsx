@@ -1,6 +1,7 @@
 import React from "react";
-import { Breadcrumb } from "../components";
+import { Breadcrumb, SEO } from "../components";
 import { Link } from "react-router-dom";
+import { pageMetadata } from "../utils/pageMetadata";
 import Blog1 from "../assets/Blog1.webp";
 import Blog2 from "../assets/Blog2.webp";
 import Blog3 from "../assets/Blog3.webp";
@@ -68,7 +69,7 @@ const News = () => {
     <section className="bg-gradient-to-br from-gray-50 to-white py-20">
       <div className="container mx-auto px-5 xl:px-28">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
             Agricultural Resources & News
           </h1>
           <p className="text-xl text-gray-600 mb-8">
@@ -178,13 +179,19 @@ const News = () => {
   );
 
   return (
-    <main>
-      <Breadcrumb title="Resources" />
-      <ResourcesHero />
-      <FeaturedArticles />
-      <ResourcesCategories />
-      <NewsletterCTA />
-    </main>
+    <>
+      <SEO
+        title={pageMetadata.news.title}
+        description={pageMetadata.news.description}
+      />
+      <main>
+        <Breadcrumb title="Resources" />
+        <ResourcesHero />
+        <FeaturedArticles />
+        <ResourcesCategories />
+        <NewsletterCTA />
+      </main>
+    </>
   );
 };
 
