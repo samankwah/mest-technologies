@@ -3,6 +3,8 @@ import Callback from "./Callback"
 import Cart from "./Cart"
 import Checkout from "./Checkout"
 import Completion from "./Completion"
+import Contact from "./Contact"
+import Equipment from "./Equipment"
 import Error from "./Error"
 import Features from "./Features"
 import Home from "./Home"
@@ -18,6 +20,8 @@ export {
   Features,
   Services,
   News,
+  Contact,
+  Equipment,
   Completion,
   Cart,
   Checkout,

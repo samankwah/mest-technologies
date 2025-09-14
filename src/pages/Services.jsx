@@ -47,7 +47,7 @@ const Services = () => {
             Professional installation, training, and support for Ghana's farming community.
           </p>
           <Link
-            to="/shop"
+            to="/equipment"
             className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             Browse Equipment
@@ -144,9 +144,12 @@ const Services = () => {
         <p className="text-xl text-white/90 mb-8">
           Contact our Ghana support team for assistance with your agricultural equipment.
         </p>
-        <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+        <Link
+          to="/contact"
+          className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block"
+        >
           Contact Support
-        </button>
+        </Link>
       </div>
     </section>
   );

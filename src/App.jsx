@@ -14,6 +14,8 @@ import {
   Features,
   Services,
   News,
+  Contact,
+  Equipment,
 } from "./pages"
 import ReactGA from "react-ga4"
 
@@ -67,6 +69,8 @@ const AppContent = () => {
         <Route path="/features" element={<Features />} />
         <Route path="/services" element={<Services />} />
         <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/equipment" element={<Equipment />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {!isAuthPage && <Footer />}

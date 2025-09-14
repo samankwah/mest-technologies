@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Blog_01 from "../assets/Blog1.webp";
 import Blog_02 from "../assets/Blog2.webp";
 import Blog_03 from "../assets/Blog3.webp";
@@ -102,9 +103,9 @@ const Footer = () => {
             <a href="#" className="hover:text-white/80">
               About Mest Technologies Limited
             </a>
-            <a href="#" className="hover:text-white/80">
+            <Link to="/contact" className="hover:text-white/80">
               Contact us
-            </a>
+            </Link>
             <a href="#" className="hover:text-white/80">
               FAQ
             </a>
