@@ -86,7 +86,7 @@ const HomeProduct = () => {
         <div className="container mx-auto px-5 xl:px-28">
           {/* Category Navigation Tabs */}
           <div className="mb-8 flex justify-center">
-            <div className="flex gap-4 md:flex-wrap md:gap-6 text-sm md:text-base overflow-x-auto scrollbar-hide pb-2 max-w-full">
+            <div className="flex gap-4 text-sm md:text-base overflow-x-auto scrollbar-hide pb-2 max-w-full">
               {categories.map((category, index) => (
                 <button
                   key={index}

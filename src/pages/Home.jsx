@@ -1,26 +1,28 @@
 import React, { Suspense, lazy } from "react"
-import { Loading } from "../components"
+import { Loading, SEO } from "../components"
+import { pageMetadata } from "../utils/pageMetadata"
+import Header from "../components/Header"
+import HomeProduct from "../components/HomeProduct"
+import BasketProduct from "../components/Basket"
+import ProductCategory from "../components/ProductCategory"
 
-const HomeProduct = lazy(() => import("../components/HomeProduct"))
-const BasketProduct = lazy(() => import("../components/Basket"))
-const Header = lazy(() => import("../components/Header"))
 const Instagram = lazy(() => import("../components/Instagram"))
-const ProductCategory = lazy(() => import("../components/ProductCategory"))
 const ProductGrid = lazy(() => import("../components/ProductGrid"))
 
 const Home = () => {
 
   return (
     <>
+      <SEO
+        title={pageMetadata.home.title}
+        description={pageMetadata.home.description}
+      />
+      <Header />
+      <HomeProduct />
+      <BasketProduct />
+      <ProductCategory />
       <Suspense fallback={<Loading />}>
-        <Header />
-        <HomeProduct />
-        <BasketProduct />
         <ProductGrid />
-        <ProductCategory />
-        
-
-        
         <Instagram />
       </Suspense>
     </>

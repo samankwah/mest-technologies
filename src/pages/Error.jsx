@@ -1,10 +1,16 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import PageNotFound from "../assets/undraw_page_not_found.svg"
+import { SEO } from "../components"
+import { pageMetadata } from "../utils/pageMetadata"
 
 const Error = () => {
   return (
     <>
+      <SEO
+        title={pageMetadata.error.title}
+        description={pageMetadata.error.description}
+      />
       <section className=" grid place-items-center ">
         <img src={PageNotFound} alt="Page not found" className="h-96 w-96  " />
         <div className=" space-y-4 text-center ">
