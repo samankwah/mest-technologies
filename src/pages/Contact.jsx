@@ -10,11 +10,10 @@ import {
 } from "react-icons/bs";
 import { FiMail, FiUser, FiPhone, FiMessageSquare } from "react-icons/fi";
 import {
-  AiOutlineFacebook,
-  AiOutlineLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
+import { BsYoutube, BsFacebook, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -186,13 +185,13 @@ const Contact = () => {
                   <h3 className="font-semibold text-gray-800 mb-4">Follow Us:</h3>
                   <div className="flex space-x-3">
                     <a
-                      href="https://www.facebook.com/mesttechnologies"
+                      href="https://facebook.com/mesttechnologies"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors"
                       aria-label="Facebook"
                     >
-                      <AiOutlineFacebook className="w-5 h-5" />
+                      <BsFacebook className="w-5 h-5" />
                     </a>
                     <a
                       href="https://twitter.com/mesttechnologies"
@@ -204,22 +203,31 @@ const Contact = () => {
                       <RiTwitterXLine className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.linkedin.com/company/mest-technologies"
+                      href="https://linkedin.com/company/mesttechnologies"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center text-white hover:bg-blue-800 transition-colors"
                       aria-label="LinkedIn"
                     >
-                      <AiOutlineLinkedin className="w-5 h-5" />
+                      <BsLinkedin className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.instagram.com/mesttechnologies"
+                      href="https://instagram.com/mesttechnologies"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition-colors"
                       aria-label="Instagram"
                     >
                       <AiOutlineInstagram className="w-5 h-5" />
+                    </a>
+                    <a
+                      href="https://youtube.com/mesttechnologies"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors"
+                      aria-label="YouTube"
+                    >
+                      <BsYoutube className="w-5 h-5" />
                     </a>
                   </div>
                 </div>

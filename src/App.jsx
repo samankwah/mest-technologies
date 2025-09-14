@@ -1,4 +1,4 @@
-import { Navbar, Footer, FloatingButtons } from "./components"
+import { Navbar, Footer, FloatingButtons, ScrollToTop } from "./components"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import {
   Auth,
@@ -40,6 +40,7 @@ const AppContent = () => {
 
   return (
     <>
+      <ScrollToTop />
       {!isAuthPage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />

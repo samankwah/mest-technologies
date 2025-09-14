@@ -34,8 +34,10 @@ import Stars from "./Stars"
 import Sidebar_Filter from "./Sidebar_Filter"
 import FloatingButtons from "./FloatingButtons"
 import SEO from "./SEO"
+import ScrollToTop from "./ScrollToTop"
 export {
   SEO,
+  ScrollToTop,
   FloatingButtons,
   Sidebar_Filter,
   Stars,
