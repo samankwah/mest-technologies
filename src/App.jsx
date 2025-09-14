@@ -1,4 +1,4 @@
-import { Navbar, Footer, FloatingButtons } from "./components"
+import { Navbar, Footer, FloatingButtons, ScrollToTop } from "./components"
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
 import {
   Auth,
@@ -14,6 +14,8 @@ import {
   Features,
   Services,
   News,
+  Contact,
+  Equipment,
 } from "./pages"
 import ReactGA from "react-ga4"
 
@@ -38,6 +40,7 @@ const AppContent = () => {
 
   return (
     <>
+      <ScrollToTop />
       {!isAuthPage && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -67,6 +70,8 @@ const AppContent = () => {
         <Route path="/features" element={<Features />} />
         <Route path="/services" element={<Services />} />
         <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/equipment" element={<Equipment />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {!isAuthPage && <Footer />}

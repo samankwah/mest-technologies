@@ -1,13 +1,52 @@
 import React, { useEffect, useRef } from "react"
 import { Link } from "react-router-dom"
 import { navLinks } from "../utils/constants"
-import { BsX } from "react-icons/bs"
+import { BsX, BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs"
+import { RiTwitterXLine } from "react-icons/ri"
 import { Logo } from "../components"
 import { useProductsContext } from "../context/product/products_context"
 
 const Sidebar = () => {
   const { closeSidebar } = useProductsContext()
   const sidebarRef = useRef(null)
+
+  const socialLinks = [
+    {
+      id: 1,
+      name: "Facebook",
+      url: "https://facebook.com/mesttechnologies",
+      icon: BsFacebook,
+      color: "hover:text-blue-600"
+    },
+    {
+      id: 2,
+      name: "Twitter",
+      url: "https://twitter.com/mesttechnologies",
+      icon: RiTwitterXLine,
+      color: "hover:text-gray-900"
+    },
+    {
+      id: 3,
+      name: "Instagram",
+      url: "https://instagram.com/mesttechnologies",
+      icon: BsInstagram,
+      color: "hover:text-pink-500"
+    },
+    {
+      id: 4,
+      name: "LinkedIn",
+      url: "https://linkedin.com/company/mesttechnologies",
+      icon: BsLinkedin,
+      color: "hover:text-blue-700"
+    },
+    {
+      id: 5,
+      name: "YouTube",
+      url: "https://youtube.com/mesttechnologies",
+      icon: BsYoutube,
+      color: "hover:text-red-500"
+    }
+  ]
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -54,6 +93,30 @@ const Sidebar = () => {
               </div>
             )
           })}
+        </div>
+      </div>
+
+      {/* Social Media Icons Footer */}
+      <div className="flex-shrink-0 px-5 py-4 border-t border-gray-200 bg-gray-50">
+        <div className="text-center">
+          <p className="text-xs text-gray-600 mb-3 font-medium">Follow Us</p>
+          <div className="flex justify-center space-x-4">
+            {socialLinks.map((social) => {
+              const IconComponent = social.icon
+              return (
+                <a
+                  key={social.id}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`p-2 rounded-full bg-white shadow-sm border border-gray-200 text-gray-600 transition-all duration-300 hover:scale-110 hover:shadow-md ${social.color} focus:outline-none focus:ring-2 focus:ring-primary/20`}
+                  aria-label={`Visit our ${social.name} page`}
+                >
+                  <IconComponent className="w-4 h-4" />
+                </a>
+              )
+            })}
+          </div>
         </div>
       </div>
     </aside>

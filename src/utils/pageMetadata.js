@@ -24,8 +24,8 @@ export const pageMetadata = {
     description: "Comprehensive agricultural monitoring services including weather tracking, soil analysis, plant health assessment, and laboratory testing across Ghana."
   },
   features: {
-    title: "Advanced Agricultural Solutions",
-    description: "Discover advanced agricultural monitoring features including precision sensors, IoT connectivity, real-time data analytics, and automated reporting systems."
+    title: "Technology & Innovation - MEST Technologies",
+    description: "Pioneering agricultural technology through AI-powered analytics, IoT connectivity, cloud platforms, and innovative solutions for modern farming in Ghana."
   },
   news: {
     title: "Agricultural Technology News",
@@ -38,6 +38,14 @@ export const pageMetadata = {
   callback: {
     title: "Authentication",
     description: "Completing authentication process for your Mest Technologies account."
+  },
+  equipment: {
+    title: "Professional Equipment & Solutions",
+    description: "Professional monitoring equipment for agriculture, research, and environmental analysis. Weather monitoring, soil analysis, laboratory equipment, nutrient management systems and consumables."
+  },
+  contact: {
+    title: "Contact Us",
+    description: "Get in touch with Mest Technologies for agricultural monitoring solutions, equipment quotes, technical support, and partnership opportunities in Ghana."
   },
   error: {
     title: "Page Not Found",

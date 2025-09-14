@@ -1,14 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Blog_01 from "../assets/Blog1.webp";
 import Blog_02 from "../assets/Blog2.webp";
 import Blog_03 from "../assets/Blog3.webp";
-import { BsTelephone, BsBuilding } from "react-icons/bs";
+import { BsTelephone, BsBuilding, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import {
-  AiOutlineFacebook,
-  AiFillTwitterSquare,
-  AiOutlineLinkedin,
   AiOutlineInstagram,
 } from "react-icons/ai";
+import { RiTwitterXLine } from "react-icons/ri";
 import { FiMail } from "react-icons/fi";
 
 const blog_data = [
@@ -76,17 +75,50 @@ const Footer = () => {
               <span>East Legon, Accra, Ghana</span>
             </p>
             <div className="flex space-x-6 pt-2">
-              <a href="#" aria-label="Facebook" className="hover:text-white/80 transition-colors">
-                <AiOutlineFacebook className="h-6 w-6 md:h-5 md:w-5" />
+              <a
+                href="https://facebook.com/mesttechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="hover:text-white/80 transition-colors"
+              >
+                <BsFacebook className="h-6 w-6 md:h-5 md:w-5" />
               </a>
-              <a href="#" aria-label="Twitter" className="hover:text-white/80 transition-colors">
-                <AiFillTwitterSquare className="h-6 w-6 md:h-5 md:w-5" />
+              <a
+                href="https://twitter.com/mesttechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter X"
+                className="hover:text-white/80 transition-colors"
+              >
+                <RiTwitterXLine className="h-6 w-6 md:h-5 md:w-5" />
               </a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-white/80 transition-colors">
-                <AiOutlineLinkedin className="h-6 w-6 md:h-5 md:w-5" />
+              <a
+                href="https://linkedin.com/company/mesttechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-white/80 transition-colors"
+              >
+                <BsLinkedin className="h-6 w-6 md:h-5 md:w-5" />
               </a>
-              <a href="#" aria-label="Instagram" className="hover:text-white/80 transition-colors">
+              <a
+                href="https://instagram.com/mesttechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="hover:text-white/80 transition-colors"
+              >
                 <AiOutlineInstagram className="h-6 w-6 md:h-5 md:w-5" />
+              </a>
+              <a
+                href="https://youtube.com/mesttechnologies"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="hover:text-white/80 transition-colors"
+              >
+                <BsYoutube className="h-6 w-6 md:h-5 md:w-5" />
               </a>
             </div>
           </div>
@@ -102,9 +134,9 @@ const Footer = () => {
             <a href="#" className="hover:text-white/80">
               About Mest Technologies Limited
             </a>
-            <a href="#" className="hover:text-white/80">
+            <Link to="/contact" className="hover:text-white/80">
               Contact us
-            </a>
+            </Link>
             <a href="#" className="hover:text-white/80">
               FAQ
             </a>
